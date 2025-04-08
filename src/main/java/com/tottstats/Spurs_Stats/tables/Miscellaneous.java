@@ -7,68 +7,69 @@ import jakarta.persistence.*;
 public class Miscellaneous {
 
     @Id
-    @Column(name = "Player", unique = true, nullable = false)
+    @Column(name = "player", unique = true, nullable = false)
     private String player;
 
-    @Column(name = "Nation")
+    @Column(name = "nation")
     private String nation;
 
-    @Column(name = "Pos")
+    @Column(name = "position")
     private String position;
 
-    @Column(name = "Age")
+    @Column(name = "age")
     private String age;
 
-    @Column(name = "90s")
+    @Column(name = "minutes_played")
     private Double ninetyMinutes;
 
-    @Column(name = "PerformanceCrdY")
+    @Column(name = "yellow_cards")
     private Integer yellowCards;
 
-    @Column(name = "PerformanceCrdR")
+    @Column(name = "red_cards")
     private Integer redCards;
 
-    @Column(name = "Performance2CrdY")
+    @Column(name = "second_yellow_cards")
     private Integer secondYellowCards;
 
-    @Column(name = "PerformanceFls")
+    @Column(name = "fouls_committed")
     private Integer foulsCommitted;
 
-    @Column(name = "PerformanceFld")
+    @Column(name = "fouls_drawn")
     private Integer foulsDrawn;
 
-    @Column(name = "PerformanceOff")
+    @Column(name = "offsides")
     private Integer offsides;
 
-    @Column(name = "PerformanceCrs")
+    @Column(name = "crosses")
     private Integer crosses;
 
-    @Column(name = "PerformanceInt")
+    @Column(name = "interceptions")
     private Integer interceptions;
 
-    @Column(name = "PerformanceTklW")
+    @Column(name = "tackles_won")
     private Integer tacklesWon;
 
-    @Column(name = "PerformancePKwon")
+    @Column(name = "penalties_won")
     private Integer penaltyKicksWon;
 
-    @Column(name = "PerformancePKcon")
+    @Column(name = "penalties_conceded")
     private Integer penaltyKicksConceded;
 
-    @Column(name = "PerformanceOG")
+    @Column(name = "own_goals")
     private Integer ownGoals;
 
-    @Column(name = "PerformanceRecov")
+    @Column(name = "ball_recoveries")
     private Integer recoveries;
 
-    @Column(name = "Aerial DuelsWon")
+    @Column(name = "aerial_duels_won")
     private Integer aerialDuelsWon;
 
-    @Column(name = "Aerial DuelsLost")
+    @Column(name = "aerial_duels_lost")
     private Integer aerialDuelsLost;
 
-    @Column(name = "Aerial DuelsWon%")
+    @Column(name = "aerial_duel_win_percentage")
     private Double aerialDuelsWonPercentage;
+
 
     // Default constructor
     public Miscellaneous() {

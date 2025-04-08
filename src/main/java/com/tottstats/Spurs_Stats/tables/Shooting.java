@@ -7,71 +7,72 @@ import jakarta.persistence.*;
 public class Shooting {
 
     @Id
-    @Column(name = "Player", unique = true, nullable = false)
+    @Column(name = "player", unique = true, nullable = false)
     private String player;
 
-    @Column(name = "Nation")
+    @Column(name = "nation")
     private String nation;
 
-    @Column(name = "Pos")
+    @Column(name = "position")
     private String position;
 
-    @Column(name = "Age")
+    @Column(name = "age")
     private String age;
 
-    @Column(name = "90s")
+    @Column(name = "minutes_played")
     private Double ninetyMinutes;
 
-    @Column(name = "StandardGls")
+    @Column(name = "goals")
     private Integer goals;
 
-    @Column(name = "StandardSh")
+    @Column(name = "shots")
     private Integer shots;
 
-    @Column(name = "StandardSoT")
+    @Column(name = "shots_on_target")
     private Integer shotsOnTarget;
 
-    @Column(name = "StandardSoT%")
+    @Column(name = "shots_on_target_pct")
     private Double shotsOnTargetPercentage;
 
-    @Column(name = "StandardSh/90")
+    @Column(name = "shots_per_90")
     private Double shotsPer90;
 
-    @Column(name = "StandardSoT/90")
+    @Column(name = "shots_on_target_per_90")
     private Double shotsOnTargetPer90;
 
-    @Column(name = "StandardG/Sh")
+    @Column(name = "goals_per_shot")
     private Double goalsPerShot;
 
-    @Column(name = "StandardG/SoT")
+    @Column(name = "goals_per_shot_on_target")
     private Double goalsPerShotOnTarget;
 
-    @Column(name = "StandardDist")
+    @Column(name = "avg_shot_distance")
     private Double averageShotDistance;
 
-    @Column(name = "StandardFK")
+    @Column(name = "free_kick_goals")
     private Integer freeKickShots;
 
-    @Column(name = "StandardPK")
+    @Column(name = "penalty_goals")
     private Integer penaltyGoals;
 
-    @Column(name = "StandardPKatt")
+    @Column(name = "penalties_taken")
     private Integer penaltyAttempts;
 
-    @Column(name = "ExpectedxG")
+    @Column(name = "expected_goals")
     private Double expectedGoals;
 
-    @Column(name = "ExpectednpxG")
+    @Column(name = "expected_non_penalty_goals")
     private Double nonPenaltyExpectedGoals;
 
-    @Column(name = "ExpectednpxG/Sh")
+    @Column(name = "expected_npg_per_shot")
     private Double nonPenaltyExpectedGoalsPerShot;
 
-    @Column(name = "ExpectedG-xG")
+    @Column(name = "goals_minus_xg")
     private Double goalsMinusExpectedGoals;
 
-    @Column(name = "Expectednp:G-xG")
+    @Column(name = "np_goals_minus_xg")
     private Double nonPenaltyGoalsMinusExpectedGoals;
+
 
     // Default constructor
     public Shooting() {

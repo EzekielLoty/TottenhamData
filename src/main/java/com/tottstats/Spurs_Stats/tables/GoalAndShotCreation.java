@@ -7,68 +7,69 @@ import jakarta.persistence.*;
 public class GoalAndShotCreation {
 
     @Id
-    @Column(name = "Player", unique = true, nullable = false)
+    @Column(name = "player", unique = true, nullable = false)
     private String player;
 
-    @Column(name = "Nation")
+    @Column(name = "nation")
     private String nation;
 
-    @Column(name = "Pos")
+    @Column(name = "position")
     private String position;
 
-    @Column(name = "Age")
+    @Column(name = "age")
     private String age;
 
-    @Column(name = "90s")
+    @Column(name = "minutes_played")
     private Double ninetyMinutes;
 
-    @Column(name = "SCASCA")
+    @Column(name = "shot_creating_actions")
     private Integer shotCreatingActions;
 
-    @Column(name = "SCASCA90")
+    @Column(name = "shot_creating_actions_per_90")
     private Double shotCreatingActionsPer90;
 
-    @Column(name = "SCA TypesPassLive")
+    @Column(name = "sca_pass_live")
     private Integer shotCreatingPassesLive;
 
-    @Column(name = "SCA TypesPassDead")
+    @Column(name = "sca_pass_dead")
     private Integer shotCreatingPassesDead;
 
-    @Column(name = "SCA TypesTO")
+    @Column(name = "sca_take_on")
     private Integer shotCreatingTakeOns;
 
-    @Column(name = "SCA TypesSh")
+    @Column(name = "sca_shot")
     private Integer shotCreatingShots;
 
-    @Column(name = "SCA TypesFld")
+    @Column(name = "sca_fouled")
     private Integer shotCreatingFoulsDrawn;
 
-    @Column(name = "SCA TypesDef")
+    @Column(name = "sca_defense")
     private Integer shotCreatingDefensiveActions;
 
-    @Column(name = "GCAGCA")
+    @Column(name = "goal_creating_actions")
     private Integer goalCreatingActions;
 
-    @Column(name = "GCAGCA90")
+    @Column(name = "goal_creating_actions_per_90")
     private Double goalCreatingActionsPer90;
 
-    @Column(name = "GCA TypesPassLive")
+    @Column(name = "gca_pass_live")
     private Integer goalCreatingPassesLive;
 
-    @Column(name = "GCA TypesPassDead")
+    @Column(name = "gca_pass_dead")
     private Integer goalCreatingPassesDead;
 
-    @Column(name = "GCA TypesTO")
+    @Column(name = "gca_take_on")
     private Integer goalCreatingTakeOns;
 
-    @Column(name = "GCA TypesSh")
+    @Column(name = "gca_shot")
     private Integer goalCreatingShots;
 
-    @Column(name = "GCA TypesFld")
+    @Column(name = "gca_fouled")
     private Integer goalCreatingFoulsDrawn;
 
-    @Column(name = "GCA TypesDef")
+    @Column(name = "gca_defense")
     private Integer goalCreatingDefensiveActions;
+
 
     // Default constructor
     public GoalAndShotCreation() {

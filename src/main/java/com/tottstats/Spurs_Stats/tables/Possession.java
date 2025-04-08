@@ -7,86 +7,87 @@ import jakarta.persistence.*;
 public class Possession {
 
     @Id
-    @Column(name = "Player", unique = true, nullable = false)
+    @Column(name = "player", unique = true, nullable = false)
     private String player;
 
-    @Column(name = "Nation")
+    @Column(name = "nation")
     private String nation;
 
-    @Column(name = "Pos")
+    @Column(name = "position")
     private String pos;
 
-    @Column(name = "Age")
+    @Column(name = "age")
     private String age;
 
-    @Column(name = "90s")
+    @Column(name = "minutes_played")
     private Double ninetyMinutes;
 
-    @Column(name = "TouchesTouches")
+    @Column(name = "touches")
     private Integer touchesTotal;
 
-    @Column(name = "TouchesDefPen")
+    @Column(name = "touches_def_pen")
     private Integer touchesDefPen;
 
-    @Column(name = "TouchesDef3rd")
+    @Column(name = "touches_def_3rd")
     private Integer touchesDef3rd;
 
-    @Column(name = "TouchesMid3rd")
+    @Column(name = "touches_mid_3rd")
     private Integer touchesMid3rd;
 
-    @Column(name = "TouchesAtt3rd")
+    @Column(name = "touches_att_3rd")
     private Integer touchesAtt3rd;
 
-    @Column(name = "TouchesAttPen")
+    @Column(name = "touches_att_pen")
     private Integer touchesAttPen;
 
-    @Column(name = "TouchesLive")
+    @Column(name = "touches_live")
     private Integer touchesLive;
 
-    @Column(name = "TakeOnsAtt")
+    @Column(name = "take_ons_attempted")
     private Integer takeOnsAtt;
 
-    @Column(name = "TakeOnsSucc")
+    @Column(name = "take_ons_successful")
     private Integer takeOnsSucc;
 
-    @Column(name = "TakeOnsSuccPercentage")
+    @Column(name = "take_ons_success_rate")
     private Double takeOnsSuccPercentage;
 
-    @Column(name = "TakeOnsTkld")
+    @Column(name = "take_ons_tackled")
     private Integer takeOnsTkld;
 
-    @Column(name = "TakeOnsTkldPercentage")
+    @Column(name = "take_ons_tackled_rate")
     private Double takeOnsTkldPercentage;
 
-    @Column(name = "CarriesCarries")
+    @Column(name = "carries")
     private Integer carriesTotal;
 
-    @Column(name = "CarriesTotDist")
+    @Column(name = "carries_total_distance")
     private Integer carriesTotalDistance;
 
-    @Column(name = "CarriesPrgDist")
+    @Column(name = "carries_progressive_distance")
     private Integer carriesProgressiveDistance;
 
-    @Column(name = "CarriesPrgC")
+    @Column(name = "carries_progressive_carries")
     private Integer carriesProgressiveC;
 
-    @Column(name = "Carries1/3")
+    @Column(name = "carries_into_final_third")
     private Integer carriesIn1stThird;
 
-    @Column(name = "CarriesCPA")
+    @Column(name = "carries_into_penalty_area")
     private Integer carriesThroughCPA;
 
-    @Column(name = "CarriesMis")
+    @Column(name = "carries_miscontrolled")
     private Integer carriesMiscontrols;
 
-    @Column(name = "CarriesDis")
+    @Column(name = "carries_dispossessed")
     private Integer carriesDispossessed;
 
-    @Column(name = "ReceivingRec")
+    @Column(name = "passes_received")
     private Integer receivingTotal;
 
-    @Column(name = "ReceivingPrgR")
+    @Column(name = "progressive_passes_received")
     private Integer receivingProgressiveR;
+
 
     // Default constructor
     public Possession() {

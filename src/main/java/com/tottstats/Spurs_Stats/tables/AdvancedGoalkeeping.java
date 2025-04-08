@@ -7,94 +7,94 @@ import jakarta.persistence.*;
 public class AdvancedGoalkeeping {
 
     @Id
-    @Column(name = "Player", unique = true, nullable = false)
+    @Column(name = "player", unique = true, nullable = false)
     private String player;
 
-    @Column(name = "Nation")
+    @Column(name = "nation")
     private String nation;
 
-    @Column(name = "Pos")
+    @Column(name = "position")
     private String position;
 
-    @Column(name = "Age")
+    @Column(name = "age")
     private String age;
 
-    @Column(name = "90s")
+    @Column(name = "minutes_played")
     private Double ninetyMinutes;
 
-    @Column(name = "GoalsGA")
+    @Column(name = "goals_conceded")
     private Long goalsAgainst;
 
-    @Column(name = "GoalsPKA")
+    @Column(name = "goals_penalty_conceded")
     private Long goalsPenaltyAgainst;
 
-    @Column(name = "GoalsFK")
+    @Column(name = "goals_from_free_kicks")
     private Long goalsFromFreeKicks;
 
-    @Column(name = "GoalsCK")
+    @Column(name = "goals_from_corners")
     private Long goalsFromCornerKicks;
 
-    @Column(name = "GoalsOG")
+    @Column(name = "own_goals")
     private Long ownGoals;
 
-    @Column(name = "ExpectedPSxG")
+    @Column(name = "expected_psxg")
     private Double expectedPostShotXG;
 
-    @Column(name = "ExpectedPSxG/SoT")
+    @Column(name = "expected_psxg_per_sot")
     private Double expectedPostShotXGPerShotOnTarget;
 
-    @Column(name = "ExpectedPSxG+/-")
+    @Column(name = "psxg_goals_difference")
     private Double expectedPostShotXGPlusMinus;
 
-    @Column(name = "Expected/90")
+    @Column(name = "expected_per_90")
     private Double expectedPer90;
 
-    @Column(name = "LaunchedCmp")
+    @Column(name = "launched_passes_completed")
     private Long launchedCompleted;
 
-    @Column(name = "LaunchedAtt")
+    @Column(name = "launched_passes_attempted")
     private Integer launchedAttempted;
 
-    @Column(name = "LaunchedCmp%")
+    @Column(name = "launched_passes_completion_rate")
     private Double launchedCompletionPercentage;
 
-    @Column(name = "PassesAtt (GK)")
+    @Column(name = "passes_attempted")
     private Integer passesAttempted;
 
-    @Column(name = "PassesThr")
+    @Column(name = "passes_thrown")
     private Integer passesThrown;
 
-    @Column(name = "PassesLaunch%")
+    @Column(name = "passes_launch_percentage")
     private Double passesLaunchPercentage;
 
-    @Column(name = "PassesAvgLen")
+    @Column(name = "passes_average_length")
     private Double passesAverageLength;
 
-    @Column(name = "Goal KicksAtt")
+    @Column(name = "goal_kicks_attempted")
     private Long goalKicksAttempted;
 
-    @Column(name = "Goal KicksLaunch%")
+    @Column(name = "goal_kicks_launch_percentage")
     private Double goalKicksLaunchPercentage;
 
-    @Column(name = "Goal KicksAvgLen")
+    @Column(name = "goal_kicks_average_length")
     private Double goalKicksAverageLength;
 
-    @Column(name = "CrossesOpp")
+    @Column(name = "crosses_faced")
     private Long crossesOpposed;
 
-    @Column(name = "CrossesStp")
+    @Column(name = "crosses_stopped")
     private Long crossesStopped;
 
-    @Column(name = "CrossesStp%")
+    @Column(name = "crosses_stop_percentage")
     private Double crossesStoppedPercentage;
 
-    @Column(name = "Sweeper#OPA")
+    @Column(name = "sweeper_actions")
     private Integer sweeperActionsOutsidePenaltyArea;
 
-    @Column(name = "Sweeper#OPA/90")
+    @Column(name = "sweeper_actions_per_90")
     private Double sweeperActionsOutsidePenaltyAreaPer90;
 
-    @Column(name = "SweeperAvgDist")
+    @Column(name = "sweeper_average_distance")
     private Double sweeperAverageDistance;
 
     // Default constructor

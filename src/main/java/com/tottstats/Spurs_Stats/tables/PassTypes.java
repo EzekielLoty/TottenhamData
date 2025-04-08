@@ -7,65 +7,66 @@ import jakarta.persistence.*;
 public class PassTypes {
 
     @Id
-    @Column(name = "Player", unique = true, nullable = false)
+    @Column(name = "player", unique = true, nullable = false)
     private String player;
 
-    @Column(name = "Nation")
+    @Column(name = "nation")
     private String nation;
 
-    @Column(name = "Pos")
+    @Column(name = "position")
     private String position;
 
-    @Column(name = "Age")
+    @Column(name = "age")
     private String age;
 
-    @Column(name = "90s")
+    @Column(name = "minutes_played")
     private Double ninetyMinutes;
 
-    @Column(name = "Att")
+    @Column(name = "passes_attempted")
     private Integer passAttempts;
 
-    @Column(name = "Pass TypesLive")
+    @Column(name = "passes_live")
     private Integer livePasses;
 
-    @Column(name = "Pass TypesDead")
+    @Column(name = "passes_dead")
     private Integer deadPasses;
 
-    @Column(name = "Pass TypesFK")
+    @Column(name = "free_kick_passes")
     private Integer freeKickPasses;
 
-    @Column(name = "Pass TypesTB")
+    @Column(name = "through_balls")
     private Integer throughBalls;
 
-    @Column(name = "Pass TypesSw")
+    @Column(name = "switches")
     private Integer switchPasses;
 
-    @Column(name = "Pass TypesCrs")
+    @Column(name = "crosses")
     private Integer crosses;
 
-    @Column(name = "Pass TypesTI")
+    @Column(name = "throw_ins")
     private Integer throwIns;
 
-    @Column(name = "Pass TypesCK")
+    @Column(name = "corner_kicks")
     private Integer cornerKicks;
 
-    @Column(name = "Corner KicksIn")
+    @Column(name = "corners_in")
     private Integer cornerKicksInSwinging;
 
-    @Column(name = "Corner KicksOut")
+    @Column(name = "corners_out")
     private Integer cornerKicksOutSwinging;
 
-    @Column(name = "Corner KicksStr")
+    @Column(name = "corners_straight")
     private Integer cornerKicksStraight;
 
-    @Column(name = "OutcomesCmp")
+    @Column(name = "passes_completed")
     private Integer completedPasses;
 
-    @Column(name = "OutcomesOff")
+    @Column(name = "offsides_passes")
     private Integer offTargetPasses;
 
-    @Column(name = "OutcomesBlocks")
+    @Column(name = "passes_blocked")
     private Integer blockedPasses;
+
 
     // Default constructor
     public PassTypes() {

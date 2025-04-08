@@ -7,83 +7,84 @@ import jakarta.persistence.*;
 public class PlayingTime {
 
     @Id
-    @Column(name = "Player", unique = true, nullable = false)
+    @Column(name = "player", unique = true, nullable = false)
     private String player;
 
-    @Column(name = "Nation")
+    @Column(name = "nation")
     private String nation;
 
-    @Column(name = "Pos")
+    @Column(name = "position")
     private String position;
 
-    @Column(name = "Age")
+    @Column(name = "age")
     private String age;
 
-    @Column(name = "MP")
+    @Column(name = "matches_played")
     private Integer matchesPlayed;
 
-    @Column(name = "Playing TimeMin")
+    @Column(name = "minutes_played")
     private Double minutesPlayed;
 
-    @Column(name = "Playing TimeMn/MP")
+    @Column(name = "avg_minutes_per_match")
     private Double minutesPerMatch;
 
-    @Column(name = "Playing TimeMin%")
+    @Column(name = "minutes_played_percentage")
     private Double percentageMinutesPlayed;
 
-    @Column(name = "Playing Time90s")
+    @Column(name = "minutes_per_90")
     private Double ninetyMinutesPlayed;
 
-    @Column(name = "StartsStarts")
+    @Column(name = "starts")
     private Integer starts;
 
-    @Column(name = "StartsMn/Start")
+    @Column(name = "avg_minutes_per_start")
     private Double minutesPerStart;
 
-    @Column(name = "StartsCompl")
+    @Column(name = "full_matches_played")
     private Integer completeMatches;
 
-    @Column(name = "SubsSubs")
+    @Column(name = "substitute_appearances")
     private Integer substitutions;
 
-    @Column(name = "SubsMn/Sub")
+    @Column(name = "avg_minutes_per_sub")
     private Double minutesPerSubstitution;
 
-    @Column(name = "SubsunSub")
+    @Column(name = "unused_sub_appearances")
     private Integer unusedSubstitutes;
 
-    @Column(name = "Team SuccessPPM")
+    @Column(name = "points_per_match")
     private Double pointsPerMatch;
 
-    @Column(name = "Team SuccessonG")
+    @Column(name = "team_goals_while_on_field")
     private Double teamGoalsWhenOnField;
 
-    @Column(name = "Team SuccessonGA")
+    @Column(name = "team_goals_against_while_on_field")
     private Double teamGoalsAgainstWhenOnField;
 
-    @Column(name = "Team Success+/-")
+    @Column(name = "team_goal_difference")
     private Double teamGoalDifference;
 
-    @Column(name = "Team Success+/-90")
+    @Column(name = "team_goal_diff_per_90")
     private Double teamGoalDifferencePer90;
 
-    @Column(name = "Team SuccessOn-Off")
+    @Column(name = "team_goal_diff_on_off")
     private Double teamPerformanceOnOff;
 
-    @Column(name = "Team Success (xG)onxG")
+    @Column(name = "team_expected_goals_on_field")
     private Double expectedGoalsWhenOnField;
 
-    @Column(name = "Team Success (xG)onxGA")
+    @Column(name = "team_expected_goals_against")
     private Double expectedGoalsAgainstWhenOnField;
 
-    @Column(name = "Team Success (xG)xG+/-")
+    @Column(name = "team_expected_goal_diff")
     private Double expectedGoalDifference;
 
-    @Column(name = "Team Success (xG)xG+/-90")
+    @Column(name = "team_expected_goal_diff_per_90")
     private Double expectedGoalDifferencePer90;
 
-    @Column(name = "Team Success (xG)On-Off")
+    @Column(name = "team_expected_goal_diff_on_off")
     private Double expectedGoalsOnOff;
+
 
     // Default constructor
     public PlayingTime() {

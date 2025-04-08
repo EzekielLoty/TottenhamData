@@ -7,74 +7,75 @@ import jakarta.persistence.*;
 public class Goalkeeping {
 
     @Id
-    @Column(name = "Player", unique = true, nullable = false)
+    @Column(name = "player", unique = true, nullable = false)
     private String player;
 
-    @Column(name = "Nation")
+    @Column(name = "nation")
     private String nation;
 
-    @Column(name = "Pos")
+    @Column(name = "position")
     private String position;
 
-    @Column(name = "Age")
+    @Column(name = "age")
     private String age;
 
-    @Column(name = "Playing TimeMP")
+    @Column(name = "matches_played")
     private Integer matchesPlayed;
 
-    @Column(name = "Playing TimeStarts")
+    @Column(name = "starts")
     private Integer starts;
 
-    @Column(name = "Playing TimeMin")
+    @Column(name = "minutes_played")
     private Integer minutesPlayed;
 
-    @Column(name = "Playing Time90s")
+    @Column(name = "minutes_per_90")
     private Double ninetyMinutes;
 
-    @Column(name = "PerformanceGA")
+    @Column(name = "goals_against")
     private Integer goalsAgainst;
 
-    @Column(name = "PerformanceGA90")
+    @Column(name = "goals_against_per_90")
     private Double goalsAgainstPer90;
 
-    @Column(name = "PerformanceSoTA")
+    @Column(name = "shots_on_target_against")
     private Integer shotsOnTargetAgainst;
 
-    @Column(name = "PerformanceSaves")
+    @Column(name = "saves")
     private Integer saves;
 
-    @Column(name = "PerformanceSave%")
+    @Column(name = "save_percentage")
     private Double savePercentage;
 
-    @Column(name = "PerformanceW")
+    @Column(name = "wins")
     private Integer wins;
 
-    @Column(name = "PerformanceD")
+    @Column(name = "draws")
     private Integer draws;
 
-    @Column(name = "PerformanceL")
+    @Column(name = "losses")
     private Double losses;
 
-    @Column(name = "PerformanceCS")
+    @Column(name = "clean_sheets")
     private Integer cleanSheets;
 
-    @Column(name = "PerformanceCS%")
+    @Column(name = "clean_sheet_percentage")
     private Double cleanSheetPercentage;
 
-    @Column(name = "Penalty KicksPKatt")
+    @Column(name = "penalties_faced")
     private Integer penaltyKicksAttempted;
 
-    @Column(name = "Penalty KicksPKA")
+    @Column(name = "penalties_allowed")
     private Integer penaltyKicksAllowed;
 
-    @Column(name = "Penalty KicksPKsv")
+    @Column(name = "penalties_saved")
     private Integer penaltyKicksSaved;
 
-    @Column(name = "Penalty KicksPKm")
+    @Column(name = "penalties_missed_by_opponents")
     private Integer penaltyKicksMissed;
 
-    @Column(name = "Penalty KicksSave%")
+    @Column(name = "penalty_save_percentage")
     private Double penaltySavePercentage;
+
 
     // Default constructor
     public Goalkeeping() {

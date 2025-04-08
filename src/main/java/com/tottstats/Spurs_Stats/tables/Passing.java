@@ -7,92 +7,92 @@ import jakarta.persistence.*;
 public class Passing {
 
     @Id
-    @Column(name = "Player", unique = true, nullable = false)
+    @Column(name = "player", unique = true, nullable = false)
     private String player;
 
-    @Column(name = "Nation")
+    @Column(name = "nation")
     private String nation;
 
-    @Column(name = "Pos")
+    @Column(name = "position")
     private String pos;
 
-    @Column(name = "Age")
+    @Column(name = "age")
     private String age;
 
-    @Column(name = "90s")
+    @Column(name = "minutes_played")
     private Double ninetyMinutes;
 
-    @Column(name = "TotalCmp")
+    @Column(name = "total_passes_completed")
     private Integer totalCompletedPasses;
 
-    @Column(name = "TotalAtt")
+    @Column(name = "total_passes_attempted")
     private Integer totalAttemptedPasses;
 
-    @Column(name = "TotalCmpPercentage")
+    @Column(name = "total_pass_completion_rate")
     private Double totalCompletedPercentage;
 
-    @Column(name = "TotalTotDist")
+    @Column(name = "total_pass_distance")
     private Integer totalTotalDistance;
 
-    @Column(name = "TotalPrgDist")
+    @Column(name = "progressive_pass_distance")
     private Integer totalProgressiveDistance;
 
-    @Column(name = "ShortCmp")
+    @Column(name = "short_passes_completed")
     private Integer shortCompletedPasses;
 
-    @Column(name = "ShortAtt")
+    @Column(name = "short_passes_attempted")
     private Integer shortAttemptedPasses;
 
-    @Column(name = "ShortCmpPercentage")
+    @Column(name = "short_pass_completion_rate")
     private Double shortCompletedPercentage;
 
-    @Column(name = "MediumCmp")
+    @Column(name = "medium_passes_completed")
     private Integer mediumCompletedPasses;
 
-    @Column(name = "MediumAtt")
+    @Column(name = "medium_passes_attempted")
     private Long mediumAttemptedPasses;
 
-    @Column(name = "MediumCmpPercentage")
+    @Column(name = "medium_pass_completion_rate")
     private Double mediumCompletedPercentage;
 
-    @Column(name = "LongCmp")
+    @Column(name = "long_passes_completed")
     private Integer longCompletedPasses;
 
-    @Column(name = "LongAtt")
+    @Column(name = "long_passes_attempted")
     private Integer longAttemptedPasses;
 
-    @Column(name = "LongCmpPercentage")
+    @Column(name = "long_pass_completion_rate")
     private Double longCompletedPercentage;
 
-    @Column(name = "Ast")
+    @Column(name = "assists")
     private Integer assists;
 
-    @Column(name = "xAG")
+    @Column(name = "expected_assisted_goals")
     private Double expectedAssists;
 
-    @Column(name = "ExpectedxA")
+    @Column(name = "expected_assists")
     private Double expectedExpectedAssists;
 
-    @Column(name = "ExpectedA_xAG")
+    @Column(name = "assist_minus_xag")
     private Double expectedAssistsMinusxAG;
 
-    @Column(name = "KP")
+    @Column(name = "key_passes")
     private Integer keyPasses;
 
-    @Column(name = "1/3")
+    @Column(name = "passes_into_final_third")
     private Integer passesIn1stThird;
 
-    @Column(name = "PPA")
+    @Column(name = "passes_into_penalty_area")
     private Integer passesIntoPenaltyArea;
 
-    @Column(name = "CrsPA")
+    @Column(name = "crosses_into_penalty_area")
     private Integer crossesIntoPenaltyArea;
 
-    @Column(name = "PrgP")
+    @Column(name = "progressive_passes")
     private Integer progressivePasses;
 
-    // Default constructor
-    public Passing() {
+    public Passing(){
+
     }
 
     // Constructor with parameters

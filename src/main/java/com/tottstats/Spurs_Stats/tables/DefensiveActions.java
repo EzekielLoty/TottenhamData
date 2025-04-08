@@ -7,68 +7,69 @@ import jakarta.persistence.*;
 public class DefensiveActions {
 
     @Id
-    @Column(name = "Player", unique = true, nullable = false)
+    @Column(name = "player", unique = true, nullable = false)
     private String player;
 
-    @Column(name = "Nation")
+    @Column(name = "nation")
     private String nation;
 
-    @Column(name = "Pos")
+    @Column(name = "position")
     private String position;
 
-    @Column(name = "Age")
+    @Column(name = "age")
     private String age;
 
-    @Column(name = "90s")
+    @Column(name = "minutes_played")
     private Double ninetyMinutes;
 
-    @Column(name = "TacklesTkl")
+    @Column(name = "tackles")
     private Integer tackles;
 
-    @Column(name = "TacklesTklW")
+    @Column(name = "tackles_won")
     private Integer tacklesWon;
 
-    @Column(name = "TacklesDef 3rd")
+    @Column(name = "tackles_def_third")
     private Integer tacklesDefensiveThird;
 
-    @Column(name = "TacklesMid 3rd")
+    @Column(name = "tackles_mid_third")
     private Integer tacklesMiddleThird;
 
-    @Column(name = "TacklesAtt 3rd")
+    @Column(name = "tackles_att_third")
     private Integer tacklesAttackingThird;
 
-    @Column(name = "ChallengesTkl")
+    @Column(name = "challenges_tackled")
     private Integer challengesTackles;
 
-    @Column(name = "ChallengesAtt")
+    @Column(name = "challenges_attempted")
     private Integer challengesAttempted;
 
-    @Column(name = "ChallengesTkl%")
+    @Column(name = "challenges_success_rate")
     private Double challengesTacklePercentage;
 
-    @Column(name = "ChallengesLost")
+    @Column(name = "challenges_lost")
     private Integer challengesLost;
 
-    @Column(name = "BlocksBlocks")
+    @Column(name = "blocks")
     private Integer blocks;
 
-    @Column(name = "BlocksSh")
+    @Column(name = "shots_blocked")
     private Integer blocksShots;
 
-    @Column(name = "BlocksPass")
+    @Column(name = "passes_blocked")
     private Integer blocksPasses;
 
-    @Column(name = "Int")
+    @Column(name = "interceptions")
     private Integer interceptions;
 
-    @Column(name = "Tkl+Int")
+    @Column(name = "tackles_plus_interceptions")
     private Integer tacklesInterceptions;
 
-    @Column(name = "Clr")
+    @Column(name = "clearances")
     private Integer clearances;
 
-    @Column(name = "Err")
+    @Column(name = "errors")
     private Integer errors;
+
 
     // Default constructor
     public DefensiveActions() {
