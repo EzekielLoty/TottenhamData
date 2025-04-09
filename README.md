@@ -6,7 +6,7 @@ A backend pipeline that delivers  soccer analytics for Premier League club **Tot
 
 ## ⚙️ Tech Stack
 
-- **Java 17**
+- **Java**
 - **Spring Boot**
 - **MySQL**
 - **Maven**
