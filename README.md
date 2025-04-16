@@ -1,6 +1,6 @@
-# 🐓 Spurs Stats REST API
+# 🐓 Tottenham Data REST API ⚽
 
-A backend pipeline that delivers  soccer analytics for Premier League club **Tottenham Hotspur**, built with **Spring Boot** and **MySQL**. This project imports scraped match and player data into a MySQL database and exposes it through a RESTful API, allowing for fast and structured data access.
+A backend pipeline that delivers  soccer analytics for Premier League club **Tottenham Hotspur**, built with **Spring Boot** and **MySQL**. This project uses imported scraped player statistics stored in a MySQL database and exposes it through a RESTful API, allowing for fast and structured data access.
 
 ---
 
