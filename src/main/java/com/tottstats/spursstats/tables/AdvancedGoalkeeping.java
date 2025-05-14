@@ -17,7 +17,7 @@ public class AdvancedGoalkeeping {
     private String position;
 
     @Column(name = "age")
-    private String age;
+    private Double age;
 
     @Column(name = "minutes_played")
     private Double ninetyMinutes;
@@ -101,7 +101,7 @@ public class AdvancedGoalkeeping {
     public AdvancedGoalkeeping() {
     }
 
-    public AdvancedGoalkeeping(String player, String nation, String position, String age, Double ninetyMinutes, Long goalsAgainst, Long goalsPenaltyAgainst, Long goalsFromFreeKicks, Long goalsFromCornerKicks, Long ownGoals, Double expectedPostShotXG, Double expectedPostShotXGPerShotOnTarget, Double expectedPostShotXGPlusMinus, Double expectedPer90, Long launchedCompleted, Integer launchedAttempted, Double launchedCompletionPercentage, Integer passesAttempted, Integer passesThrown, Double passesLaunchPercentage, Double passesAverageLength, Long goalKicksAttempted, Double goalKicksLaunchPercentage, Double goalKicksAverageLength, Long crossesOpposed, Long crossesStopped, Double crossesStoppedPercentage, Integer sweeperActionsOutsidePenaltyArea, Double sweeperActionsOutsidePenaltyAreaPer90, Double sweeperAverageDistance) {
+    public AdvancedGoalkeeping(String player, String nation, String position, Double age, Double ninetyMinutes, Long goalsAgainst, Long goalsPenaltyAgainst, Long goalsFromFreeKicks, Long goalsFromCornerKicks, Long ownGoals, Double expectedPostShotXG, Double expectedPostShotXGPerShotOnTarget, Double expectedPostShotXGPlusMinus, Double expectedPer90, Long launchedCompleted, Integer launchedAttempted, Double launchedCompletionPercentage, Integer passesAttempted, Integer passesThrown, Double passesLaunchPercentage, Double passesAverageLength, Long goalKicksAttempted, Double goalKicksLaunchPercentage, Double goalKicksAverageLength, Long crossesOpposed, Long crossesStopped, Double crossesStoppedPercentage, Integer sweeperActionsOutsidePenaltyArea, Double sweeperActionsOutsidePenaltyAreaPer90, Double sweeperAverageDistance) {
         this.player = player;
         this.nation = nation;
         this.position = position;
@@ -146,7 +146,7 @@ public class AdvancedGoalkeeping {
         return position;
     }
 
-    public String getAge() {
+    public Double getAge() {
         return age;
     }
 
